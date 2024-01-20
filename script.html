@@ -1,0 +1,17 @@
+
+    <pre class="hljs line-numbers language-markup" data-codetype="php" title="Script" style="color: rgb(169, 183, 198); background: rgb(40, 43, 46); display: block; overflow-x: auto; padding: 0.5em;">
+
+
+<pre class="hljs line-numbers language-markup" data-codetype="php" title="Script" style="color: rgb(169, 183, 198); background: rgb(40, 43, 46); display: block; overflow-x: auto; padding: 0.5em;">
+<br><br><span class="xml"><span class="php"><span class="hljs-meta" style="color: rgb(187, 181, 41);">&lt;?php</span> 
+
+    <span class="hljs-keyword" style="color: rgb(204, 120, 50);">include</span>(<span class="hljs-string" style="color: rgb(106, 135, 89);">'connect.php'</span>);
+    
+    $nama       = $_POST[<span class="hljs-string" style="color: rgb(106, 135, 89);">'nama'</span>];
+    $jurusan    = $_POST[<span class="hljs-string" style="color: rgb(106, 135, 89);">'jurusan'</span>];
+    $jk         = $_POST[<span class="hljs-string" style="color: rgb(106, 135, 89);">'jk'</span>];
+        
+    $insert = mysqli_query($connect, <span class="hljs-string" style="color: rgb(106, 135, 89);">"insert into mahasiswa set nama='$nama', jurusan='$jurusan', jk='$jk'"</span>);
+    
+    <span class="hljs-meta" style="color: rgb(187, 181, 41);">?&gt;</span></span>
+    </span></pre>
